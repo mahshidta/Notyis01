@@ -5,10 +5,10 @@ from . import views
 from .views import register
 
 urlpatterns = [
-    path("", views.loginForm),
-    # path("loginview/", login_view, name="loginview"),
-    # path("registerview/", register_view, name="loginview"),
+    path("login/", views.login_view, name='login'),
+    path("dashboard/", views.dashboard, name='dashboard'),
     path('register/', register, name='register'),
+    path('logout/', views.logout_view, name='logout'),
 
 ]
 
